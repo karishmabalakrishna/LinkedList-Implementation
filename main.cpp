@@ -43,7 +43,11 @@ void insert(string data){
 void printList() 
     { 
         Node* currNode = head; 
-   
+
+        if(currNode == nullptr){
+          cout << "List is empty" <<'\n';
+          return;
+        }
        cout << "Final list of songs in linked list: " << '\n'; 
    
         // Traverse through the LinkedList 
@@ -120,7 +124,7 @@ void songList(){
 
       string songName;
       string artist;
-      cout << '\n' << "Add your favourite songs. Please type option to continue(1 ? 2 ? 3 ? 4 ? 5)" << '\n';
+      
       cout<< "Please enter song name: " <<'\n';
       cin.ignore();
       getline(cin, songName);
@@ -144,7 +148,7 @@ int main()
 //while loop to prompt user to select a choice. The while loop reset the question once the user is done and continues to run till user want to continue
  while(wantToContinue == "Yes" || wantToContinue == "yes"){
 
-    cout << '\n' << "Welcome to Android Email Designing Project. Please type option to continue(1 ? 2 ? 3)" << '\n';
+    cout << '\n' << "Create your own playlist. Please type option to continue(1 ? 2 ? 3 ? 4 ? 5)" << '\n';
       cout<< "1. Enter song Information"<<'\n';
       cout<<"2. Show the final song list" << '\n';
       cout<<"3. Show the final song list with artist" << '\n';
@@ -162,6 +166,9 @@ int main()
       }
 
       else if(choice == 3){
+              if(finalSongList.empty()){
+                cout << "List is empty" <<'\n';
+              }
                 for (const auto& pair: finalSongList) {
 		            cout << "{" << pair.first << ": " << pair.second.getArtist()<<"}\n";
       }

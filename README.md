@@ -1,4 +1,4 @@
-# LinkedList-Implementation
+# LinkedList
 LinkedList is a data structure that stores elements in a non-contiguous location.
 Each data item is called a ‘Node’ and each node has a data part and an address part. The address part stores the link to the next node in the LinkedList.
 

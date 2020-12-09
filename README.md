@@ -6,5 +6,5 @@ Each data item is called a ‘Node’ and each node has a data part and an addre
 The above example creates a custom linkedlist with functionalities like insert, remove and print. The above program stores the list of user entered songs in the linked list and also stores the songs and their respective artists in a hashmap.
 
 ## LinkedList Diagram
-![](LinkedListDiagram.png)
+![](img/LinkedListDiagram.png)
 

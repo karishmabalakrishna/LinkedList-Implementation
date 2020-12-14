@@ -181,7 +181,8 @@ int main()
       else if(choice == 5){
         string songName;
         cout << "Enter name of song(case-sensitive)";
-        cin >> songName;
+        cin.ignore();
+        getline(cin,songName);
         deleteValue(songName);
         printList();
       }

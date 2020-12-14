@@ -10,3 +10,15 @@ The above example creates a custom linkedlist with functionalities like insert, 
 
 ## LinkedList Program Output
 
+### Save Songs in list
+![](img/output_savesongs.png)
+
+### Showing saved songs in list and hashmap
+![](img/output_savedsongsinlist.png)
+
+### Modify artist name of saved songs
+![](img/output_modifysavedsongs.png)
+
+### Delete any songs from list
+![](img/output_deletesongs.png)
+
